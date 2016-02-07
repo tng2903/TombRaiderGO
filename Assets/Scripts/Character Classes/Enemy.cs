@@ -22,6 +22,11 @@ public class Enemy : Character
         }
     }
 
+
+    /// <summary>
+    /// Enemy attack simply destroys the player.
+    /// </summary>
+    /// <param name="target"></param>
     public override void Attack(GameObject target)
     {
         Destroy(target);

@@ -3,6 +3,10 @@ using System.Collections;
 
 public class Player : Character
 {
+    /// <summary>
+    /// How the player class processes the TouchCommand
+    /// </summary>
+    /// <param name="command"></param>
     public override void PhaseBehavior(TouchCommand command)
     {
         switch (command.inputType)

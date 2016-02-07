@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Abstract Class from which all characters in the game will derive from.
+/// </summary>
+
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(NavMeshAgent))]
@@ -64,7 +68,10 @@ public abstract class Character : MonoBehaviour
         Debug.DrawRay(raycastOrigin, raycastDirection);
         return Physics.Raycast(raycastOrigin, raycastDirection, out hit,4);
     }
-
+    /// <summary>
+    /// Sets the direction in which the character is facing. Also updates the Direction variable.
+    /// </summary>
+    /// <param name="direction"></param>
     public void SetCharacterDirection(Direction direction)
     {
         switch (direction)
@@ -93,6 +100,11 @@ public abstract class Character : MonoBehaviour
         facingDirection = direction;
     }
 
+
+    /// <summary>
+    /// Override this function to impart attack function to the character
+    /// </summary>
+    /// <param name="target"></param>
     public virtual void Attack(GameObject target)
     {
         print("Not implemented");
