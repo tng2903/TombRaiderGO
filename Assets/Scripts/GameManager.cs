@@ -17,6 +17,13 @@ public class GameManager : MonoBehaviour
         inputManager = GetComponent<InputManager>();
     }
 
+    /// <summary>
+    /// The update methods follows the flow of:
+    /// Input (user enters input (swipe,touch))
+    /// Player character processes input
+    /// Non-player characters process input
+    /// </summary>
+
     public void Update()
     {
         switch (gamePhase)

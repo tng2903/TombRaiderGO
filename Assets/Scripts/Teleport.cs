@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// Moves player and camera to new location
+/// </summary>
 public class Teleport : MonoBehaviour
 {
     public GameObject destination;

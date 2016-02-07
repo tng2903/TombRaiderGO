@@ -13,6 +13,13 @@ public class CameraManager : MonoBehaviour
         cameras = temp.ToArray();
     }
 
+    /// <summary>
+    /// Method lerps the camera to the given destination
+    /// </summary>
+    /// <param name="destinationLocation"></param>
+    /// <param name="destinationRotation"></param>
+    /// <param name="time">Time in seconds</param>
+    /// <returns></returns>
     public IEnumerator CameraLerp(Vector3 destinationLocation, Quaternion destinationRotation, float time)
     {
         print("Camera lerp called");

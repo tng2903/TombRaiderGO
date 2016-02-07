@@ -18,6 +18,10 @@ public class Tile : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// An elegant way of converting any tile's position into a position onto the Navmesh
+    /// </summary>
+    /// <returns>Navmesh equivalent of the tile</returns>
     public Vector3 getTileLocation()
     {
         NavMeshHit hit;

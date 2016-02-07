@@ -100,6 +100,9 @@ public class InputManager : MonoBehaviour
     }
 }
 
+/// <summary>
+/// Encapsulates the touch behavior into a command object that is passed into the character classes
+/// </summary>
 public class TouchCommand
 {
     public Direction direction
@@ -115,6 +118,12 @@ public class TouchCommand
         get; set;
     }
 
+    /// <summary>
+    /// Create the touch command you desire with this constructor.
+    /// </summary>
+    /// <param name="direction"></param>
+    /// <param name="touchPoint"></param>
+    /// <param name="touchInput"></param>
     public TouchCommand(Direction direction, Vector2 touchPoint, InputType touchInput)
     {
         this.direction = direction;
