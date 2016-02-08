@@ -1,6 +1,8 @@
 # TombRaiderGO
 A clone of the famous mobile game Tomb Raider GO. Implemented using Unity and C#.
 
+DEMO: https://www.youtube.com/watch?v=WDgkedmSm5k
+
 Core features include:
 1) Touch and swipe handling implemented via the Command Design Pattern
 2) Event driven game-loop (commands processed sequentially)
