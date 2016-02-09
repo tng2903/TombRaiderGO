@@ -5,7 +5,7 @@ public class InputManager : MonoBehaviour
 
     private Vector2 startPos;
     private Vector2 endPos;
-    private InputType touchInput;
+    private InputType touchInput = InputType.IDLE;
 
     /// <summary>
     /// TouchListener: Use method in the update loop to listen for touch events.
